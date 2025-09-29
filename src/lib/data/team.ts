@@ -1,8 +1,8 @@
 export interface Member {
   id: string;
-  name: string;
+  name: string; // Kannada first, then English
   role: 'Club Head' | 'Domain Head' | 'Member';
-  domain?: string; // for domain heads
+  domain?: string; // Kannada first, then English (for domain heads)
   year: number;
   photo: string;
   linkedin?: string;
@@ -15,14 +15,14 @@ export const teamData: Record<number, Member[]> = {
   2025: [
     {
       id: 'ch-2025-1',
-      name: 'Ganesh Hegde / ಗಣೇಶ್ ಹೆಗಡೆ',
+      name: 'ಗಣೇಶ್ ಹೆಗಡೆ / Ganesh',
       role: 'Club Head',
       year: 2025,
       photo: '/DomainHeads/ganesh.JPG',
     },
     {
       id: 'ch-2025-2', 
-      name: 'Achyuth / ಅಚ್ಯುತ',
+      name: 'ಅಚ್ಯುತ / Achyuth',
       role: 'Club Head',
       year: 2025,
       photo: '/DomainHeads/achyuth.JPG',
@@ -31,9 +31,9 @@ export const teamData: Record<number, Member[]> = {
     },
     {
       id: 'dh-2025-1',
-      name: 'Sharath Gowda / ಶರತ್ ಗೌಡ',
+      name: 'ಶರತ್ ಗೌಡ / Sharath',
       role: 'Domain Head',
-      domain: 'IT / ಐಟಿ',
+      domain: 'ಐಟಿ / IT',
       year: 2025,
       photo: '/DomainHeads/sharath.JPG',
       linkedin: 'https://www.linkedin.com/in/sharath-gowda-g-r-372832281/',
@@ -42,108 +42,108 @@ export const teamData: Record<number, Member[]> = {
     },
     {
       id: 'dh-2025-2',
-      name: 'Kushal / ಕುಶಾಲ್',
+      name: 'ಕುಶಾಲ್ / Kushal',
       role: 'Domain Head',
-      domain: 'Event / ಈವೆಂಟ್',
+      domain: 'ಈವೆಂಟ್ / Event',
       year: 2025,
       photo: '/DomainHeads/kushal.JPG',
       linkedin: 'https://www.linkedin.com/in/kushal-toragal',
     },
     {
       id: 'dh-2025-3',
-      name: 'Suman / ಸುಮನ್',
+      name: 'ಸুমನ್ / Suman',
       role: 'Domain Head', 
-      domain: 'Logistics / ಲಾಜಿಸ್ಟಿಕ್ಸ್',
+      domain: 'ಲಾಜಿಸ್ಟಿಕ್ಸ್ / Logistics',
       year: 2025,
       photo: '/DomainHeads/suman.JPG',
-      linkedin: 'https://www.linkedin.com/in/suman-kumar-k-r-0a4837304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-      instagram: 'https://www.instagram.com/suman_kumar_k_r?igsh=MTJ4czN6ZjFzeWh0aQ==',
+      linkedin: 'https://www.linkedin.com/in/suman-kumar-k-r-0a4837304',
+      instagram: 'https://www.instagram.com/suman_kumar_k_r',
     },
     {
       id: 'dh-2025-4',
-      name: 'Sumana / ಸುಮನಾ',
+      name: 'ಸುಮನಾ / Sumana',
       role: 'Domain Head', 
-      domain: 'Cultural / ಸಾಂಸ್ಕೃತಿಕ',
+      domain: 'ಸಾಂಸ್ಕೃತಿಕ / Cultural',
       year: 2025,
       photo: '/DomainHeads/sumana.JPG',
-      instagram: 'https://www.instagram.com/sumana_ag?igsh=MW5kdXg2N2tkdnE0bg%3D%3D&utm_source=qr',
-      linkedin: 'https://www.linkedin.com/in/sumana-a-g-7862ba360?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      instagram: 'https://www.instagram.com/sumana_ag',
+      linkedin: 'https://www.linkedin.com/in/sumana-a-g-7862ba360',
     },
     {
       id: 'dh-2025-5',
-      name: 'Rohan / ರೋಹನ್',
+      name: 'ರೋಹನ್ / Rohan',
       role: 'Domain Head', 
-      domain: 'Cultural / ಸಾಂಸ್ಕೃತಿಕ',
+      domain: 'ಸಾಂಸ್ಕೃತಿಕ / Cultural',
       year: 2025,
       photo: '/DomainHeads/rohan.JPG',
-      instagram: 'https://www.instagram.com/rohan134v?igsh=MWcxeXdnYzVkbW1tag==',
-      linkedin: 'https://www.linkedin.com/in/rohan-a09b11298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      instagram: 'https://www.instagram.com/rohan134v',
+      linkedin: 'https://www.linkedin.com/in/rohan-a09b11298',
     },
     {
       id: 'dh-2025-6',
-      name: 'Ananya Satish / ಅನನ್ಯ ಸತೀಶ್',
+      name: 'ಅನನ್ಯ ಸತೀಶ್ / Ananya',
       role: 'Domain Head', 
-      domain: 'Cultural / ಸಾಂಸ್ಕೃತಿಕ',
+      domain: 'ಸಾಂಸ್ಕೃತಿಕ / Cultural',
       year: 2025,
       photo: '/DomainHeads/ananya.JPG',
-      instagram: 'https://www.instagram.com/ananya.satish_?igsh=Z3NxMnF5M29hYzh6&utm_source=qr',
+      instagram: 'https://www.instagram.com/ananya.satish_',
       linkedin: 'http://linkedin.com/in/ananya-satish-31b465323',
     },
     {
       id: 'dh-2025-7',
-      name: 'Siri Basavaraj / ಸಿರಿ ಬಸವರಾಜ್',
+      name: 'ಸಿರಿ ಬಸವರಾಜ್ / Siri',
       role: 'Domain Head', 
-      domain: 'Hospitality / ಅತಿಥಿ ಸತ್ಕಾರ',
+      domain: 'ಅತಿಥಿ ಸತ್ಕಾರ / Hospitality',
       year: 2025,
       photo: '/DomainHeads/siri.JPG',
       linkedin: 'https://www.linkedin.com/in/siri-basavaraj/',
     },
     {
       id: 'dh-2025-8',
-      name: 'Preksha / ಪ್ರೇಕ್ಷಾ',
+      name: 'ಪ್ರೇಕ್ಷಾ / Preksha',
       role: 'Domain Head', 
-      domain: 'Marketing / ಮಾರ್ಕೆಟಿಂಗ್',
+      domain: 'ಮಾರ್ಕೆಟಿಂಗ್ / Marketing',
       year: 2025,
       photo: '/DomainHeads/preksha.JPG',
-      instagram: 'https://www.instagram.com/prekshaa__._?igsh=OTl4eHBhbW5ubzJq',
+      instagram: 'https://www.instagram.com/prekshaa__._',
       linkedin: 'http://www.linkedin.com/in/preksha-prakash-',
     },
     {
       id: 'dh-2025-9',
-      name: 'Kavan Reddy / ಕವನ್ ರೆಡ್ಡಿ',
+      name: 'ಕವನ್ ರೆಡ್ಡಿ / Kavan',
       role: 'Domain Head', 
-      domain: 'Media / ಮೀಡಿಯಾ',
+      domain: 'ಮೀಡಿಯಾ / Media',
       year: 2025,
       photo: '/DomainHeads/kavan.JPG',
-      instagram: 'https://www.instagram.com/_kavan_reddy?igsh=MXN3MnRqYW9iMTd5aQ==',
+      instagram: 'https://www.instagram.com/_kavan_reddy',
     },
     {
       id: 'dh-2025-10',
-      name: 'Vinay Katnur / ವಿನಯ ಕಟ್ಟನೂರು',
+      name: 'ವಿನಯ ಕಟ್ಟನೂರು / Vinay',
       role: 'Domain Head', 
-      domain: 'Sponsorship / ಪ್ರಾಯೋಜಕತ್ವ',
+      domain: 'ಪ್ರಾಯೋಜಕತ್ವ / Sponsorship',
       year: 2025,
       photo: '/DomainHeads/vinay.JPG',
     },
     {
       id: 'dh-2025-11',
-      name: 'Chitra Madarakhandi / ಚಿತ್ರಾ ಮದರಖಂಡಿ',
+      name: 'ಚಿತ್ರಾ ಮದರಖಂಡಿ / Chitra',
       role: 'Domain Head', 
-      domain: 'Content Writing / ವಿಷಯ ಬರವಣಿಗೆ',
+      domain: 'ವಿಷಯ ಬರವಣಿಗೆ / Content Writing',
       year: 2025,
       photo: '/DomainHeads/chitra.JPG',
       linkedin: 'https://www.linkedin.com/in/chitra-madarakhandi-15b8162a0',
-      instagram: 'https://www.instagram.com/chitramadarakhandi?igsh=N21kZzlha2Z1eXBv',
+      instagram: 'https://www.instagram.com/chitramadarakhandi',
     },
     {
       id: 'dh-2025-12',
-      name: 'Srujan Kashyap / ಸೃಜನ ಕಾಶ್ಯಪ್',
+      name: 'ಸೃಜನ ಕಾಶ್ಯಪ್ / Srujan',
       role: 'Domain Head', 
-      domain: 'Operations / ಕಾರ್ಯಾಚರಣೆಗಳು',
+      domain: 'ಕಾರ್ಯಾಚರಣೆಗಳು / Operations',
       year: 2025,
       photo: '/DomainHeads/srujan.JPG',
-      linkedin: 'https://www.linkedin.com/in/srujan-kashyap-s-610944282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-      instagram: 'https://www.instagram.com/srujan.kashyap._?igsh=bnUwZG5xOXgyZnpq',
+      linkedin: 'https://www.linkedin.com/in/srujan-kashyap-s-610944282',
+      instagram: 'https://www.instagram.com/srujan.kashyap._',
     },
   ],
   2024: [
@@ -158,13 +158,15 @@ export const teamData: Record<number, Member[]> = {
   ]
 };
 
-// Rest of your functions remain the same...
+// Utility functions
 export const getTeamByYear = (year: number): Member[] => {
   return teamData[year] || [];
 };
 
 export const getAllYears = (): number[] => {
-  return Object.keys(teamData).map(year => parseInt(year)).sort((a, b) => b - a);
+  return Object.keys(teamData)
+    .map(year => parseInt(year))
+    .sort((a, b) => b - a);
 };
 
 export const getCurrentYear = (): number => {
