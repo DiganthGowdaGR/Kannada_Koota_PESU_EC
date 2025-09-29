@@ -14,7 +14,7 @@ export default function Footer() {
               <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-sm kannada-text">ಕ</span>
               </div>
-              <span className="font-bold text-lg">Kannada Koota</span>
+              <span className="font-bold text-lg">ಕನ್ನಡ ಕೂಟ</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Celebrating and preserving Kannada culture, language, and traditions at PES University Electronic City Campus.
@@ -65,7 +65,9 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 flex-shrink-0" />
-                <span>PES University, Electronic City</span>
+                <span>PES University, EC, 
+                  Bangalore
+                </span>
               </div>
             </div>
           </div>
@@ -75,7 +77,7 @@ export default function Footer() {
             <h3 className="font-semibold text-foreground">Follow Us</h3>
             <div className="flex space-x-3">
               <a
-                href="https://instagram.com/kannadakoota_pes"
+                href="https://www.instagram.com/kannadakoota_ecc?igsh=eGJnODZ6Njd0dTU5"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 bg-accent rounded-full flex items-center justify-center hover:bg-accent/80 transition-colors"
@@ -83,7 +85,7 @@ export default function Footer() {
               >
                 <Instagram className="h-4 w-4 text-accent-foreground" />
               </a>
-              <a
+              {/* <a
                 href="https://facebook.com/kannadakoota.pes"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -91,8 +93,8 @@ export default function Footer() {
                 aria-label="Follow us on Facebook"
               >
                 <Facebook className="h-4 w-4 text-accent-foreground" />
-              </a>
-              <a
+              </a> */}
+              {/* <a
                 href="https://twitter.com/kannadakoota_pes"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -100,7 +102,7 @@ export default function Footer() {
                 aria-label="Follow us on Twitter"
               >
                 <Twitter className="h-4 w-4 text-accent-foreground" />
-              </a>
+              </a> */}
             </div>
             <p className="text-xs text-muted-foreground">
               Stay updated with our latest events and activities

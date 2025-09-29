@@ -41,24 +41,26 @@ export default function TeamCard({ member }: TeamCardProps) {
   ].filter(social => social.url);
 
   return (
-    <div className={`card-elevated group ${getCardSize()}`}>
+    <div className={`card-elevated group ${getCardSize()} border-2 border-yellow-400`}>
       <div className="p-6 text-center space-y-4">
-        {/* Profile Image */}
-        <div className="relative mx-auto">
-          <img
-            src={member.photo}
-            alt={`${member.name} - ${member.role}`}
-            className={`${getImageSize()} rounded-full object-cover border-4 border-primary/20 group-hover:border-primary/40 transition-all duration-300`}
-            onError={(e) => {
-              const target = e.target as HTMLImageElement;
-              target.src = '/api/placeholder/200/200';
-            }}
-          />
-          {member.role === 'Club Head' && (
-            <div className="absolute -top-2 -right-2 bg-primary text-primary-foreground rounded-full p-2">
-              <span className="text-xs font-bold">★</span>
-            </div>
-          )}
+        {/* Profile Image - Centered */}
+        <div className="flex justify-center">
+          <div className="relative">
+            <img
+              src={member.photo}
+              alt={`${member.name} - ${member.role}`}
+              className={`${getImageSize()} rounded-full object-cover border-4 border-primary/20 group-hover:border-primary/40 transition-all duration-300 mx-auto`}
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.src = '/api/placeholder/200/200';
+              }}
+            />
+            {member.role === 'Club Head' && (
+              <div className="absolute -top-2 -right-2 bg-primary text-primary-foreground rounded-full p-2">
+                <span className="text-xs font-bold">★</span>
+              </div>
+            )}
+          </div>
         </div>
 
         {/* Member Info */}

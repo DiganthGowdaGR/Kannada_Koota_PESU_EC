@@ -29,7 +29,7 @@ export default function Team() {
             <div className="flex items-center justify-center space-x-2 text-accent">
               <Users className="h-8 w-8" />
               <h1 className="text-4xl md:text-6xl font-bold">
-                Our Team
+                ನಮ್ಮ ತಂಡ / Our Team
               </h1>
             </div>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -114,7 +114,7 @@ export default function Team() {
           {/* Join Us CTA */}
           <div className="mt-16 text-center py-12 bg-primary-muted rounded-2xl">
             <h2 className="text-3xl font-bold text-foreground mb-4">
-              Want to Join Our Team?
+              ನಮ್ಮ ತಂಡಕ್ಕೆ ಸೇರಲು ಬಯಸುವಿರಾ?
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
               We're always looking for passionate individuals who want to contribute to preserving and celebrating Kannada culture.
@@ -124,13 +124,13 @@ export default function Team() {
                 href="/contact"
                 className="btn-hero inline-flex items-center justify-center px-8 py-4 rounded-lg font-semibold transition-colors duration-200"
               >
-                Get in Touch
+                ಪ್ರಶ್ನೆಗಳಿದೆಯೆ?
               </a>
               <a
                 href="/events"
                 className="btn-accent inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-colors duration-200"
               >
-                Attend Our Events
+                ನಮ್ಮ ಕಾರ್ಯಕ್ರಮಗಳಲ್ಲಿ ಭಾಗವಹಿಸಿ
               </a>
             </div>
           </div>

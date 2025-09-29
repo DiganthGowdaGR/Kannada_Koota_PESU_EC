@@ -24,13 +24,13 @@ export default function TeamYearToggle({ years, selectedYear, onChange }: TeamYe
     }
   }, [selectedYear]);
 
-  const scroll = (direction: 'left' | 'right') => {
-    if (scrollContainerRef.current) {
-      const scrollAmount = 200;
-      scrollContainerRef.current.scrollBy({
-        left: direction === 'left' ? -scrollAmount : scrollAmount,
-        behavior: 'smooth'
-      });
+  // 🔑 FIX: change selectedYear instead of just scrolling container
+  const changeYear = (direction: 'left' | 'right') => {
+    const index = years.indexOf(selectedYear);
+    if (direction === 'left' && index > 0) {
+      onChange(years[index - 1]);
+    } else if (direction === 'right' && index < years.length - 1) {
+      onChange(years[index + 1]);
     }
   };
 
@@ -46,9 +46,10 @@ export default function TeamYearToggle({ years, selectedYear, onChange }: TeamYe
         <Button
           variant="outline"
           size="sm"
+          disabled={selectedYear === years[0]}
           className="hidden sm:flex w-8 h-8 p-0 rounded-full flex-shrink-0"
-          onClick={() => scroll('left')}
-          aria-label="Scroll left"
+          onClick={() => changeYear('left')}
+          aria-label="Previous year"
         >
           <ChevronLeft className="h-4 w-4" />
         </Button>
@@ -86,9 +87,10 @@ export default function TeamYearToggle({ years, selectedYear, onChange }: TeamYe
         <Button
           variant="outline"
           size="sm"
+          disabled={selectedYear === years[years.length - 1]}
           className="hidden sm:flex w-8 h-8 p-0 rounded-full flex-shrink-0"
-          onClick={() => scroll('right')}
-          aria-label="Scroll right"
+          onClick={() => changeYear('right')}
+          aria-label="Next year"
         >
           <ChevronRight className="h-4 w-4" />
         </Button>
