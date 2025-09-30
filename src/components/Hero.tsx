@@ -11,11 +11,10 @@ function MarqueeImages() {
   
   // Sample images (replace with your actual image paths)
   const images = [
-    "/DomainHeads/group1.JPG",
-    "/DomainHeads/group1.JPG",
-    "/DomainHeads/group1.JPG",
-    "/DomainHeads/group1.JPG",
-    "/DomainHeads/group1.JPG"
+    "Events/KKEC X RT 1.JPG",
+    "Events/KKEC X RT 3.JPG",
+    "Events/KKEC DC 1.jpg",
+    "Events/KKEC DC 2.jpg",
   ];
 
   useEffect(() => {

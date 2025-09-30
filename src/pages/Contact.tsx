@@ -138,17 +138,17 @@ export default function Contact() {
                     <Mail className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold text-foreground">Email</h3>
-                      <p className="text-muted-foreground">kannadakoota@pes.edu</p>
+                      <p className="text-muted-foreground">kannadakoota.ecc@pes.edu</p>
                     </div>
                   </div>
                   
-                  <div className="flex items-start space-x-4">
+                  {/* <div className="flex items-start space-x-4">
                     <Phone className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold text-foreground">Phone</h3>
                       <p className="text-muted-foreground">+91-9876543210</p>
                     </div>
-                  </div>
+                  </div> */}
                   
                   <div className="flex items-start space-x-4">
                     <MapPin className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
@@ -165,7 +165,7 @@ export default function Contact() {
               </div>
 
               {/* Office Hours */}
-              <div className="card-elevated p-6">
+              {/* <div className="card-elevated p-6">
                 <h3 className="text-lg font-semibold text-foreground mb-4">Club Hours</h3>
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
@@ -181,7 +181,7 @@ export default function Contact() {
                     <span className="text-foreground">Closed</span>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

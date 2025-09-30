@@ -17,8 +17,8 @@ export default function EventCard({ event, featured = false }: EventCardProps) {
       day: 'numeric',
       month: 'long',
       year: 'numeric',
-      hour: '2-digit',
-      minute: '2-digit'
+      // hour: '2-digit',
+      // minute: '2-digit'
     });
   };
 
@@ -90,7 +90,7 @@ export default function EventCard({ event, featured = false }: EventCardProps) {
           {/* Expandable Details */}
           <div className={`transition-all duration-300 overflow-hidden ${isExpanded ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
             <div className="pt-4 border-t border-border space-y-4">
-              <div>
+              {/* <div>
                 <h4 className="font-semibold text-foreground mb-2">Event Details</h4>
                 <div className="prose prose-sm max-w-none text-muted-foreground">
                   {event.fullDescription.split('\n').map((paragraph, index) => (
@@ -99,7 +99,7 @@ export default function EventCard({ event, featured = false }: EventCardProps) {
                     </p>
                   ))}
                 </div>
-              </div>
+              </div> */}
 
               {/* Gallery Preview */}
               {event.gallery && event.gallery.length > 0 && (
@@ -137,12 +137,12 @@ export default function EventCard({ event, featured = false }: EventCardProps) {
               {isExpanded ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
             </Button>
             
-            {event.status === 'upcoming' && (
+            {/* {event.status === 'upcoming' && (
               <Button size="sm" className="btn-accent flex items-center space-x-1">
                 <span>Register</span>
                 <ExternalLink className="h-3 w-3" />
               </Button>
-            )}
+            )} */}
           </div>
         </div>
       </div>

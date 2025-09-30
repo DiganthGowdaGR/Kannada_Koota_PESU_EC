@@ -35,7 +35,7 @@ export default function Events() {
             <div className="flex items-center justify-center space-x-2 text-primary">
               <Calendar className="h-8 w-8" />
               <h1 className="text-4xl md:text-6xl font-bold">
-                Our Events
+                ನಮ್ಮ ಕಾರ್ಯಕ್ರಮಗಳು / Our Events
               </h1>
             </div>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
