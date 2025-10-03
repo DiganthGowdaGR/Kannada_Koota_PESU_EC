@@ -44,7 +44,7 @@ export default function Contact() {
           <div className="space-y-6 animate-fade-in-up">
             <div className="flex items-center justify-center space-x-2 text-accent">
               <MessageCircle className="h-8 w-8" />
-              <h1 className="text-4xl md:text-6xl font-bold">Get in Touch</h1>
+              <h1 className="text-4xl md:text-6xl font-bold">ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ</h1>
             </div>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Have questions, suggestions, or want to get involved? We'd love to hear from you!

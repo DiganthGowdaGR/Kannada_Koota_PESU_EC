@@ -11,10 +11,11 @@ function MarqueeImages() {
   
   // Sample images (replace with your actual image paths)
   const images = [
-    "Events/KKEC X RT 1.JPG",
-    "Events/KKEC X RT 3.JPG",
-    "Events/KKEC DC 1.jpg",
-    "Events/KKEC DC 2.jpg",
+    // "Hero/KK1.jpeg",
+    "Hero/KKEC X RT 1.JPG",
+    "Hero/KKEC X RT 3.JPG",
+    "Hero/KKEC DC 1.jpg",
+    "Hero/TM 1.jpg"
   ];
 
   useEffect(() => {
@@ -109,7 +110,7 @@ export default function Hero({ title = 'ಕನ್ನಡ ಕೂಟ EC PES' }: Her
                 className="px-6 py-3 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
                 size="lg"
               >
-                <a href="/events">View Events</a>
+                <a href="/Hero">View Hero</a>
               </Button>
             </div>
 
@@ -121,7 +122,7 @@ export default function Hero({ title = 'ಕನ್ನಡ ಕೂಟ EC PES' }: Her
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-primary">10+</div>
-                <div className="text-sm text-muted-foreground">Events Yearly</div>
+                <div className="text-sm text-muted-foreground">Hero Yearly</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-primary">3</div>
@@ -138,11 +139,11 @@ export default function Hero({ title = 'ಕನ್ನಡ ಕೂಟ EC PES' }: Her
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center">
           <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse"></div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

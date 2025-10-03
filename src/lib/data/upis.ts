@@ -10,18 +10,18 @@ export interface UpiInfo {
 export const upiData: UpiInfo[] = [
   {
     id: 'primary',
-    upiId: 'kannadakoota@pes',
+    upiId: 'NA',
     name: 'Kannada Koota EC PES - Primary',
     description: 'Primary account for general donations and event sponsorships',
-    qrCodeImage: '/api/placeholder/300/300',
+    qrCodeImage: '/Hero/KK1.jpeg',
     isDefault: true
   },
   {
     id: 'events',
-    upiId: 'events.kannadakoota@pes',
+    upiId: 'NA',
     name: 'Kannada Koota EC PES - Events',
     description: 'Dedicated account for event registrations and workshop fees',
-    qrCodeImage: '/api/placeholder/300/300',
+    qrCodeImage: '/Hero/KK1.jpeg',
     isDefault: false
   }
 ];
@@ -52,12 +52,12 @@ export const donationInfo = {
     'Technology and equipment for digital initiatives'
   ],
   paymentInstructions: {
-    kannada: 'ದಾನಿಗಳು ದಯವಿಟ್ಟು ಪಾವತಿ ವಿವರಣೆಯಲ್ಲಿ "EC-PES:ಘಟನೆಯ ಹೆಸರು" ಅನ್ನು ಉಲ್ಲೇಖಿಸಿ',
-    english: 'Please mention "EC-PES:EventName" in payment description for proper tracking'
+    kannada: 'ದಾನಿಗಳು ದಯವಿಟ್ಟು ಪಾವತಿ ವಿವರಣೆಯಲ್ಲಿ "PESU-EC : ಘಟನೆಯ ಹೆಸರು" ಅನ್ನು ಉಲ್ಲೇಖಿಸಿ',
+    english: 'Please mention "PESU-EC :EventName" in payment description for proper tracking'
   },
   contactInfo: {
-    email: 'kannadakoota@pes.edu',
+    email: 'kannadakoota.ecc@pes.edu',
     phone: '+91-9876543210',
-    treasurer: 'Rajesh Naik - Finance Head'
+    treasurer: '?'
   }
 };

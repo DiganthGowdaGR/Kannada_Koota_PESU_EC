@@ -22,7 +22,7 @@ export default function Upis() {
             <div className="flex items-center justify-center space-x-2 text-success">
               <Heart className="h-8 w-8" />
               <h1 className="text-4xl md:text-6xl font-bold">
-                Support Our Cause
+                ನಮ್ಮ ಕ್ಲಬ್‌ಗೆ ಬೆಂಬಲ ನೀಡಿ
               </h1>
             </div>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
