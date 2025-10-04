@@ -51,7 +51,7 @@ export const teamData: Record<number, Member[]> = {
     },
     {
       id: 'dh-2025-3',
-      name: 'ಸুমನ್ / Suman',
+      name: 'ಸುಮನ್ / Suman',
       role: 'Domain Head', 
       domain: 'ಲಾಜಿಸ್ಟಿಕ್ಸ್ / Logistics',
       year: 2025,
@@ -137,13 +137,23 @@ export const teamData: Record<number, Member[]> = {
     },
     {
       id: 'dh-2025-12',
-      name: 'ಸೃಜನ ಕಾಶ್ಯಪ್ / Srujan',
+      name: 'ಸೃಜನ ಕಶ್ಯಪ್ / Srujan',
       role: 'Domain Head', 
       domain: 'ಕಾರ್ಯಾಚರಣೆಗಳು / Operations',
       year: 2025,
       photo: '/DomainHeads/srujan.JPG',
       linkedin: 'https://www.linkedin.com/in/srujan-kashyap-s-610944282',
       instagram: 'https://www.instagram.com/srujan.kashyap._',
+    },
+    {
+      id: 'dh-2025-13',
+      name: ' / Ruchitha',
+      role: 'Domain Head', 
+      domain: '',
+      year: 2025,
+      photo: '/DomainHeads/ruchitha.JPG',
+      linkedin: '',
+      instagram: '',
     },
   ],
   2024: [
@@ -152,8 +162,8 @@ export const teamData: Record<number, Member[]> = {
       name: 'NA',
       role: 'Club Head',
       year: 2024,
-      photo: '/api/placeholder/200/200',
-      linkedin: 'https://linkedin.com/in/anitha-sharma',
+      photo: '/Hero/KK1.jpeg',
+      linkedin: 'https://linkedin.com/in/NA',
     }
   ]
 };
