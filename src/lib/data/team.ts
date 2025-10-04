@@ -42,7 +42,7 @@ export const teamData: Record<number, Member[]> = {
     },
     {
       id: 'dh-2025-2',
-      name: 'ಕುಶಾಲ್ / Kushal',
+      name: 'ಕುಶಾಲ್ ತೊರಗಲ್ / Kushal',
       role: 'Domain Head',
       domain: 'ಈವೆಂಟ್ / Event',
       year: 2025,
@@ -145,16 +145,16 @@ export const teamData: Record<number, Member[]> = {
       linkedin: 'https://www.linkedin.com/in/srujan-kashyap-s-610944282',
       instagram: 'https://www.instagram.com/srujan.kashyap._',
     },
-    {
-      id: 'dh-2025-13',
-      name: ' / Ruchitha',
-      role: 'Domain Head', 
-      domain: '',
-      year: 2025,
-      photo: '/DomainHeads/ruchitha.JPG',
-      linkedin: '',
-      instagram: '',
-    },
+    // {
+    //   id: 'dh-2025-13',
+    //   name: ' / Ruchitha',
+    //   role: 'Domain Head', 
+    //   domain: '',
+    //   year: 2025,
+    //   photo: '/DomainHeads/ruchitha.JPG',
+    //   linkedin: '',
+    //   instagram: '',
+    // },
   ],
   2024: [
     {
