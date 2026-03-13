@@ -103,6 +103,17 @@ export default function EventCard({ event, featured = false }: EventCardProps) {
           <p className={`text-muted-foreground leading-relaxed ${featured ? 'text-lg' : ''}`}>
             {event.teaser}
           </p>
+          {event.registerLink && (
+          <a
+            href={event.registerLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          <Button className="mt-3">
+            Register Now
+          </Button>
+          </a>
+          )}
 
           {/* Expandable Section */}
           <Collapsible.Content

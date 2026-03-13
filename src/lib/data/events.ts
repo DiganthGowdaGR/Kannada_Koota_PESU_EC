@@ -87,6 +87,17 @@ export const events: Event[] = [
     gallery: ['/Events/mahashivratri-dance2.jpeg',
     ],
   },
+  {
+  id: 'blood-donation',
+  title: 'ರಕ್ತ ಸ್ಪಂದನು Raktha Spandana',
+  date: '2026-03-17',
+  teaser: '“Raktha Spandana” — A drop of blood can save a life. A blood donation camp organized by Kannada Koota. Blood donation is the noblest of all donations.',
+  image: '/Events/blood-donation.jpeg',
+  registerLink: 'https://forms.gle/k3aQZrJ8jMttbiDt6',
+  gallery: [
+    '/Events/blood-donation.jpeg'
+  ],
+},
 ];
 
 /* ---------- DATE HELPERS ---------- */
