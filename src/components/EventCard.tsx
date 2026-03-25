@@ -11,6 +11,7 @@ interface EventCardProps {
 
 export default function EventCard({ event, featured = false }: EventCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
@@ -34,7 +35,8 @@ export default function EventCard({ event, featured = false }: EventCardProps) {
       data-event-id={event.id}
     >
       <div className={`p-6 ${featured ? 'lg:flex lg:space-x-6' : ''}`}>
-        {/* Image */}
+        
+        {/* Event Image */}
         <div className={`relative overflow-hidden rounded-lg ${featured ? 'lg:w-1/2' : ''}`}>
           <img
             src={event.image}
@@ -49,7 +51,7 @@ export default function EventCard({ event, featured = false }: EventCardProps) {
             }}
           />
 
-          {/* Upcoming badge only */}
+          {/* Upcoming Badge */}
           {event.status === 'upcoming' && (
             <div className="absolute top-3 right-3">
               <span className="px-3 py-1 rounded-full text-xs font-medium bg-success text-success-foreground">
@@ -58,7 +60,7 @@ export default function EventCard({ event, featured = false }: EventCardProps) {
             </div>
           )}
 
-          {/* Featured badge */}
+          {/* Featured Badge */}
           {featured && (
             <div className="absolute top-3 left-3">
               <span className="px-3 py-1 rounded-full text-xs font-medium bg-primary text-primary-foreground">
@@ -70,6 +72,8 @@ export default function EventCard({ event, featured = false }: EventCardProps) {
 
         {/* Content */}
         <div className={`${featured ? 'lg:w-1/2 mt-4 lg:mt-0' : 'mt-4'} space-y-4`}>
+
+          {/* Title */}
           <div>
             <h3
               className={`font-bold text-foreground leading-tight ${
@@ -79,11 +83,13 @@ export default function EventCard({ event, featured = false }: EventCardProps) {
               {event.title}
             </h3>
 
+            {/* Date + Location */}
             <div className="flex flex-wrap items-center gap-4 mt-3 text-sm text-muted-foreground">
               <div className="flex items-center space-x-1">
                 <Calendar className="h-4 w-4" />
                 <span>{formatDate(event.date)}</span>
               </div>
+
               {event.location && (
                 <div className="flex items-center space-x-1">
                   <MapPin className="h-4 w-4" />
@@ -93,28 +99,43 @@ export default function EventCard({ event, featured = false }: EventCardProps) {
             </div>
           </div>
 
+          {/* Description */}
           <p className={`text-muted-foreground leading-relaxed ${featured ? 'text-lg' : ''}`}>
             {event.teaser}
           </p>
+          {event.registerLink && (
+          <a
+            href={event.registerLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          <Button className="mt-3">
+            Register Now
+          </Button>
+          </a>
+          )}
 
-          {/* Expandable content */}
+          {/* Expandable Section */}
           <Collapsible.Content
             className={`transition-all duration-300 overflow-hidden ${
               isExpanded ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
             }`}
           >
             <div className="pt-4 mt-4 border-t border-border space-y-4">
+
               {/* Gallery */}
               {event.gallery && event.gallery.length > 0 && (
                 <div>
                   <h4 className="font-semibold text-foreground mb-2">Gallery</h4>
+
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                     {event.gallery.slice(0, 6).map((image, index) => (
                       <img
                         key={index}
                         src={image}
                         alt={`Gallery image ${index + 1}`}
-                        className="w-full h-20 object-cover rounded border hover:opacity-80 transition-opacity cursor-pointer"
+                        onClick={() => setSelectedImage(image)}
+                        className="w-full h-20 object-cover rounded border cursor-pointer hover:scale-105 transition"
                         loading="lazy"
                         onError={(e) => {
                           const target = e.target as HTMLImageElement;
@@ -125,10 +146,11 @@ export default function EventCard({ event, featured = false }: EventCardProps) {
                   </div>
                 </div>
               )}
+
             </div>
           </Collapsible.Content>
 
-          {/* Actions */}
+          {/* Read More Button */}
           <div className="flex flex-wrap gap-3 pt-2">
             <Collapsible.Trigger asChild>
               <Button variant="outline" size="sm" className="flex items-center space-x-1">
@@ -141,8 +163,23 @@ export default function EventCard({ event, featured = false }: EventCardProps) {
               </Button>
             </Collapsible.Trigger>
           </div>
+
         </div>
       </div>
+
+      {/* Image Popup Viewer */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+          onClick={() => setSelectedImage(null)}
+        >
+          <img
+            src={selectedImage}
+            className="max-h-[90%] max-w-[90%] rounded-lg shadow-lg"
+          />
+        </div>
+      )}
+
     </Collapsible.Root>
   );
 }

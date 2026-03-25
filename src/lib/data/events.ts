@@ -73,11 +73,31 @@ export const events: Event[] = [
   },
   {
     id: 'club-head',
-    title: 'New Crew for 2026',
-    date: '2026-02-15',
-    teaser: 'To be announced soon...',
+    title: 'ಹೊಸ ಚಿಗುರು New Crew for 2026',
+    date: '2026-02-04',
+    teaser: 'We are thrilled to announce a new leadership structure for our club. As we continue to push the boundaries of cultural and community engagement, we welcome a fresh board of Heads and Domain Heads.',
     image: '/Events/club-head.jpg',
   },
+  {
+    id: 'mahashivratri-dance',
+    title: 'ಮಹಾ ಶಿವರಾತ್ರಿ ನೃತ್ಯ ಪ್ರದರ್ಶನು Mahashivratri Dance Performance',
+    date: '2026-02-13',
+    teaser: 'From silence to resonance,from resonance to rhythm 🎼🎼from rhythm to dance,from dance to devotion 🌟 The Kannada Koota presents a special dance performance for Mahashivratri🌀',
+    image: '/Events/mahashivratri-dance1.jpeg',
+    gallery: ['/Events/mahashivratri-dance2.jpeg',
+    ],
+  },
+  {
+  id: 'blood-donation',
+  title: 'ರಕ್ತ ಸ್ಪಂದನು Raktha Spandana',
+  date: '2026-03-17',
+  teaser: '“Raktha Spandana” — A drop of blood can save a life. A blood donation camp organized by Kannada Koota. Blood donation is the noblest of all donations.',
+  image: '/Events/blood-donation.jpeg',
+  registerLink: 'https://forms.gle/k3aQZrJ8jMttbiDt6',
+  gallery: [
+    '/Events/blood-donation.jpeg'
+  ],
+},
 ];
 
 /* ---------- DATE HELPERS ---------- */

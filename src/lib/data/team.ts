@@ -226,7 +226,7 @@ export const teamData: Record<number, Member[]> = {
       id: 'dh-2025-5',
       name: 'ರೋಹನ್ / Rohan',
       role: 'Domain Head', 
-      domain: 'ಸಾಂಸ್ಕೃತಿಕ / Cultural',
+      domain: 'ವಿನ್ಯಾಸ / Design',
       year: 2025,
       photo: '/DomainHeads/rohan.JPG',
       instagram: 'https://www.instagram.com/rohan134v',
